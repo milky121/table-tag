@@ -1,0 +1,21 @@
+ *{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: pink;
+    
+}
+
+h1{
+    color: aqua;
+}
+
+#two button{
+    background-color: black;
+    color: white;
+}
+
+#one button{
+    background-color: aqua;
+    color: black;
+} 
+
