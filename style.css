@@ -1,4 +1,113 @@
-h1 {
+/* h1 {
     text-align: center;
     width: 100%;
+} */
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
 }
+
+h3{
+    color: blueviolet;
+
+}
+h1{
+    color: #b92b27;
+}
+
+#login {
+    background-color: aliceblue;
+
+}
+#signup {
+    background-color: #b92b27;
+}
+
+.upvote{
+    background-color: aqua;
+    color: #b92b27;
+}
+/* descendent selector- we can use multiple tag */
+
+p a{
+    color: blueviolet;
+    background-color: yellow;
+}
+
+/* adjacent sibling */
+p+h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color: cornflowerblue;
+    color: #b9b427;
+
+}
+
+/* child combinator */
+
+div>input{
+    background-color: darkkhaki;
+    color: palevioletred;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: green;
+}
+
+/* pseudo class */
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    text-decoration: overline;
+}
+
+button:active{
+    background-color: palevioletred;
+    color: black;
+
+}
+
+p:active{
+    font-weight: bold;
+    color: blue;
+}
+
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+
+h1::first-letter{
+    color: black;
+}
+
+p::first-line{
+    color: #b92b27;
+}
+
+p::selection{
+    background-color: pink;
+}
+
+h3{
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+

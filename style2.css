@@ -1,0 +1,19 @@
+div{
+    background-color: yellow;
+}
+
+form{
+    background-color: red;
+}
+
+input{
+    background-color: yellow;
+}
+
+button{
+    background-color: pink;
+}
+
+button:hover{
+    background-color: red;
+}
