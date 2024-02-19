@@ -1,19 +1,30 @@
+
+h1{
+    width: 50%;
+    background-color: white;
+    margin-left: 10%;
+    text-decoration: underline;
+    color: brown;
+}
 .one{
     height: 200px;
     width: 500px;
     background-color: antiquewhite;
     border-width: 5px;
-    border-style: double;
-    border-color: blueviolet;
+    border-style: solid;
+    border-color: rgb(8, 1, 15);
     border-left-color: black;
-    border-left-style: dotted;
+    border-left-style: solid;
     border-radius: 30px;
     border-top-right-radius: 20px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
     margin-bottom: 25px;
+    text-align: center;
+    color: brown;
+    text-decoration: underline;
     
 }
 button{
