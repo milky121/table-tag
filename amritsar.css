@@ -1,0 +1,49 @@
+
+
+#one{
+    color: rgb(66, 66, 246);
+    text-align: center;
+}
+
+div{
+    height: 300px;
+    width: 500px;
+    border: 2px solid black;
+    margin-left: 400px;
+    margin-top: 100px;
+    padding-left: 50px;
+    border-radius: 10px 100px / 120px;
+    box-shadow: 5px 5px 5px rgb(75, 74, 74);
+    
+   
+    
+    
+}
+
+#two{
+    color: rgb(65, 65, 241);
+    padding-left: 0%;
+} 
+
+button{
+    background-color: rgb(80, 78, 78);
+}
+
+h5{
+    color: rgb(237, 7, 7);
+}
+
+div:hover{
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    transition-duration: 2s;
+    transform: scale(1, 1.5);
+    background-image: url(th\ \(5\).jpeg);
+    background-size: cover;
+}
+
+#three{
+    color: aqua;
+    margin-left: 380px;
+    margin-top: 10px;
+    padding-left: 50px;
+}
