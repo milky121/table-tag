@@ -1,45 +1,98 @@
 .container{
-    width: 600px;
-    height: 300px;
-    background-color: black;
-    display: inline-grid;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(240, 67, 67);
+    /* display: inline-grid; */
     /* grid-template-rows: 50px 50px 50px 50px 50px;
     grid-template-columns: 100px 100px 100px 100px 100px;
     grid-template-columns: auto auto auto; */
     /* grid-template-rows: repeat(4,1fr); */
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(3,1fr);
-    /* row-gap: 10px;
-    column-gap: 50px;
-     */
-     grid-gap: 10px 30px;
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    grid-template-columns: repeat(12,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    
+     /* grid-gap: 10px 30px;
      justify-items: start;
      justify-items: centre;
      align-items: end;
-     place-items: centre;
+     place-items: centre; */
 
 }
 
-.item{
+.container div{
+    background-color: pink;
+    font-size: 1.5rem;
+}
+
+/* .item{
     width: 100px;
     height: 50px;
     background-color: greenyellow;
     border: 2px solid black;
     text-align: centre;
-}
+} */
 
 .one{
 
     /* for stretching box */
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
+   grid-column: 1 / span 12;
 
-    grid-column: 1/4;
+    /* grid-column: 1/4;
     /* grid-column: 1 /span 3; */
-    justify-self: end;
+    /* justify-self: end;  */
 }
 
 .two{
-    grid-row-start: 1;
-    grid-row-end: 3;
+   grid-column: 1 / span 3;
+   grid-row: 2 / span 10;
+}
+
+.three{
+   grid-column: 4 / span 6;
+}
+
+.four{
+    grid-column: 4 / span 6;
+    grid-row: 3 / span 9;
+}
+
+.five{
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 10;
+}
+
+.six{
+   grid-column: 1 / span 12;
+}
+
+@media(max-width:720px){
+    .one{
+        grid-column: 1 / span 12;
+    }
+    .two{
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 9;
+    }
+
+    .three{
+        grid-column: 1 / span 12;
+        grid-row: 2;
+    }
+    .four{
+        grid-column: 4 / span 9;
+        grid-row: 3 / span 9;
+    }
+
+    .five{
+        grid-column: 1 / span 3;
+        grid-row: 12;
+    }
+
+    .six{
+        grid-column: 4 / span 9;
+        grid-row: 12;
+    }
 }
